@@ -141,7 +141,10 @@ header.sticky h1.logo a { background-image: url(../images/logo_dark.png); }
 #overlay { position: fixed; z-index: 9999; background: rgba(0,0,0,.8); left: 0; right: 0; top: 0; bottom: 0; display: none; pointer-events: none; }
 #overlay .inner { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
 #overlay .inner .close { position: absolute; right: -1rem; top: -1rem; width: 2rem; height: 2rem; text-align: center; line-height: 2rem; border-radius: 50%; color: #000; background: #fff; }
-#overlay:target {display: block; pointer-events: auto; }
+#overlay.visible { display: block; pointer-events: auto; }
+
+
+
 
 /* excellent_mobile */
 .excellent_mobile { padding-top: 80px; background: #fbfaf8; }
